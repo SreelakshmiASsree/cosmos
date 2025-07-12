@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        Poppins: ["Poppins", "sans-serif"],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="font-Poppins">
+    <section class="h-screen bg-cover bg-center" style="background-image: url('./images/banner.png');">
+        <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-6 flex items-center justify-between z-50 font-Ovo">
+            <img src="./images/logo.png" alt="" class="w-52 ">
+            <ul class=" hidden md:flex  items-center gap-6 lg:gap-8 rounded-full px-12 py-3  
+        dark:border ">
+                <li><a href="#top" class="text-[15px] font-medium">HOME</a></li>
+                <li><a href="#contact" class="text-[15px] font-medium">PRODUCTS</a></li>
+                <li><a href="#about" class="text-[15px] font-medium">ABOUT US</a></li>
+                <li><a href="#contact" class="text-[15px] font-medium">CONTACT US</a></li>
+
+            </ul>
+            <div class="flex items-center gap-4">
+                <button>
+                    <a href=""><i
+                            class="fa-solid fa-magnifying-glass  lg:text-xl bg-white px-3 py-2 rounded-full"></i></a>
+                </button>
+                <button>
+                    <a href=""><i class="fa-solid fa-cart-shopping lg:text-xl bg-white px-3 py-2 rounded-full"></i></a>
+                </button>
+                <button class="block md:hidden ml-3" onclick="openMenu()">
+                    <i class="fa-solid fa-bars text-lg"></i>
+
+                </button>
+            </div>
+
+            <!----mobile menu------->
+            <ul id="sideMenu"
+                class="fixed top-0 bottom-0 -right-64 w-64 h-screen bg-rose-50 dark:bg-[#2a004a] dark:text-white flex flex-col gap-4 py-20 px-10 z-50 transition-all duration-500 font-Ovo">
+                <div class=" absolute right-6 top-6" onclick="closeMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <li><a href="#top" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About me</a></li>
+                <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact me</a></li>
+            </ul>
+        </nav>
+
+        <div class="custom_container">
+            <div class="flex items-center  justify-start  h-[80vh] px-4 text-center ">
+                <div class=" text-[#000] mt-36 flex flex-col gap-3">
+                    <h3 class="text-3xl lg:text-7xl font-semibold mb-4 text-start" data-animation="fadeInUp"
+                        data-delay=".6s">
+                        The complete <br>Products solution
+                    </h3>
+                    <p class="text-base lg:text-xl !leading-8  mb-6 max-w-[900px] text-start" data-animation="fadeInUp"
+                        data-delay=".8s">
+                        Cosmos General Trading LLC is a newly established, dynamic trading company committed to
+                        providing a
+                        diverse range of high-quality products and services to meet the varied needs of our clients.
+                    </p>
+                    <div data-animation="fadeInUp" data-delay="1s" class="text-start">
+                        <button></button> <a href="http://" download
+                            class=" bg-white text-black px-10 py-4  hover:bg-gray-200 transition lg:text-lg font-medium">
+                            GET OUR BROCHURE</a>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class=" py-12 bg-[#fdfbfb]">
+        <div class="custom_container">
+            <div class="flex  justify-center items-start gap-16">
+                <div class="flex">
+                    <div class="flex gap-6 justify-center items-center">
+                        <div class="item_icon bg-[#fce3dd] p-4 rounded-full">
+                            <img src="/images/iconone.png" alt="icon_not_found" />
+                        </div>
+                        <div class="item_content">
+                            <h3 class="text-[#141414] text-xl mb-2  font-semibold">High-Quality Products</h3>
+                            <p>Sourced to meet global standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex gap-6 justify-center items-center">
+                        <div class="item_icon bg-[#fce3dd] p-4 rounded-full">
+                            <img src="/images/icontwo.png" alt="icon_not_found" />
+                        </div>
+                        <div class="item_content">
+                            <h3 class="text-[#141414] text-xl mb-2  font-semibold">Scalable Solutions</h3>
+                            <p class="max-w-[280px]">Serving small businesses to large enterprises.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div class="flex gap-6 justify-center items-center">
+                        <div class="item_icon bg-[#fce3dd] p-4 rounded-full">
+                            <img src="/images/iconthree.png" alt="icon_not_found" />
+                        </div>
+                        <div class="item_content">
+                            <h3 class="text-[#141414] text-xl mb-2 font-semibold">Innovative Solutions</h3>
+                            <p class="max-w-[265px]">Offering modern products for all industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 max-w-[1300px] custom_container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+            <!-- Large Feature Box -->
+            <div class="md:col-span-2 bg-gray-300 relative h-[530px] flex items-center justify-center">
+                <div class="relative h-[530px] w-full overflow-hidden">
+                    <div id="sliderWrapper" class="flex transition-transform duration-1000 ease-in-out w-full h-full">
+                        <div class="w-full flex-shrink-0 bg-cover bg-center h-full"
+                            style="background-image: url('images/dummy.jpg')"></div>
+                        <div class="w-full flex-shrink-0 bg-cover bg-center h-full"
+                            style="background-image: url('images/dummyone.jpg')"></div>
+                        <div class="w-full flex-shrink-0 bg-cover bg-center h-full"
+                            style="background-image: url('images/special_offer.jpg')"></div>
+                    </div>
+
+                    <!-- Overlay Content -->
+                    <div
+                        class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-center gap-3">
+                        <div>
+                            <h3 class="lg:text-6xl text-xl font-semibold text-white">Special Offer</h3>
+                            <p class="text-white text-sm mb-3">Lorem ipsum dolor sit amet domin Quaequ e an mea</p>
+                            <button
+                                class="bg-white text-black px-10 py-4  lg:text-2xl text-lg hover:bg-gray-200 font-semibold">
+                                View Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Arrows -->
+                <div class="absolute bottom-3 right-3 flex gap-2">
+                    <button id="prevBtn"
+                        class="w-8 h-8 bg-white rounded-full text-black text-sm flex items-center justify-center">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn"
+                        class="w-8 h-8 bg-white rounded-full  text-black text-sm flex items-center justify-center">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Right-Side Cards (All same height) -->
+            <div class=" flex flex-col items-center text-center h-[530px] relative">
+                <div class="w-full h-full relative">
+                    <img src="images/special_offertwo.jpg" alt="Cropped Pointelle" class="w-full h-full object-cover" />
+
+                    <!-- Centered Overlay Text -->
+                    <div class="absolute inset-0  flex items-center justify-center text-center">
+                        <div>
+
+                            <a href="#!"
+                                class="bg-white text-black px-10 py-4  lg:text-2xl text-lg hover:bg-gray-200 font-semibold">
+                                Cropped Pointelle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" flex flex-col items-center text-center h-[530px] relative">
+                <div class="w-full h-full relative">
+                    <img src="images/special_offertwo.jpg" alt="Cropped Pointelle" class="w-full h-full object-cover" />
+
+                    <!-- Centered Overlay Text -->
+                    <div class="absolute inset-0  flex items-center justify-center text-center">
+                        <div>
+
+                            <a href="#!"
+                                class="bg-white text-black px-10 py-4  lg:text-2xl text-lg hover:bg-gray-200 font-semibold">
+                                Cropped Pointelle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" flex flex-col items-center text-center h-[530px] relative">
+                <div class="w-full h-full relative">
+                    <img src="images/special_offertwo.jpg" alt="Cropped Pointelle" class="w-full h-full object-cover" />
+
+                    <!-- Centered Overlay Text -->
+                    <div class="absolute inset-0  flex items-center justify-center text-center">
+                        <div>
+
+                            <a href="#!"
+                                class="bg-white text-black px-10 py-4  lg:text-2xl text-lg hover:bg-gray-200 font-semibold">
+                                Cropped Pointelle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" flex flex-col items-center text-center h-[530px] relative">
+                <div class="w-full h-full relative">
+                    <img src="images/special_offertwo.jpg" alt="Cropped Pointelle" class="w-full h-full object-cover" />
+
+                    <!-- Centered Overlay Text -->
+                    <div class="absolute inset-0  flex items-center justify-center text-center">
+                        <div>
+
+                            <a href="#!"
+                                class="bg-white text-black px-10 py-4  lg:text-2xl text-lg hover:bg-gray-200 font-semibold">
+                                Cropped Pointelle
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="py-12">
+        <div class="custom_container">
+            <div class="flex justify-start items-center">
+                <h1 class="lg:text-5xl text-xl font-semibold mb-8 ">Popular Products</h1>
+
+            </div>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+                <div class="w-full max-w-xs mx-auto">
+                    <!-- Image and Icons -->
+                    <div class="w-full h-[300px] relative group overflow-hidden">
+                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+
+                        <!-- Icons on Hover -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
+                            <i
+                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
+                            <i
+                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
+                            <i
+                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
+                        </div>
+                    </div>
+
+                    <!-- Product Name -->
+                    <p class="text-lg font-medium py-3 text-black text-center">Rag & Bone Beck Coat</p>
+                </div>
+
+
+
+                <div class="w-full h-[300px] flex flex-col justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full h-[300px] flex justify-center items-center">
+                    <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                </div>
+
+
+            </div>
+
+            <div class="flex justify-center text-center mt-8">
+                <button class="bg-gray-200 text-black px-14 py-4 text-xl font-bold ">Load More</button>
+            </div>
+        </div>
+    </section>
+    <section class="pt-12">
+        <div class="flex">
+            <div class="relative">
+                <img src="/images//offer.jpg" alt="offer">
+                <div class="absolute inset-0  flex items-center justify-center text-center">
+                    <div>
+
+                        <p class=" text-white  lg:text-5xl text-lg  font-semibold">
+                            Read The Blog
+                        </p>
+                        <button class="text-white text-lg font-bold mt-5 hover:underline hover:underline-offset-1">
+                            VIEW ALL POSTS
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="/images//offer.jpg" alt="offer">
+                <div class="absolute inset-0  flex items-center justify-center text-center">
+                    <div>
+
+                        <p class=" text-white  lg:text-5xl text-lg  font-semibold mb-2">
+                            Follow Our Store
+                        </p>
+                        <p class="text-white  lg:text-5xl text-lg  font-semibold"> On Instagram</p>
+                        <button class="text-white text-lg font-bold mt-5 hover:underline hover:underline-offset-1">
+                            @posts
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class=" bg-gray-100">
+        <div class="max-w-4xl custom_container  px-4 py-20">
+            <div class="text-center ">
+                <form action="#" class="flex flex-col gap-5">
+                    <h2 class="text-2xl lg:text-3xl font-bold mb-6">
+                        Start of Summer – Up to 35% off on all items
+                    </h2>
+                    <div class="flex flex-col lg:flex-row justify-center items-center 
+         mb-4">
+                        <input type="email" name="email" placeholder="Your email address"
+                            class="w-full  px-5 py-[23px] border border-black focus:outline-none focus:ring-2 focus:ring-black" />
+                        <button type="submit" class="bg-black text-white px-10 py-6 hover:bg-gray-800 transition">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="text-xl text-gray-400 mb-0">
+                        Sign up to our Newsletter and get the discount code
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black text-white">
+        <div class="py-20">
+            <div class="max-w-7xl custom_container px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+
+                <!-- About Section -->
+                <div>
+                    <a href="index.html">
+                        <img src="/images/footer_logo.png" alt="logo_not_found" class="mb-4" />
+                    </a>
+                    <p class="text-sm mb-6">
+                        Discover new ways to dress this spring with a selection of the best designer jackets.
+                        Discover new ways to dress this spring.
+                    </p>
+
+                </div>
+
+                <!-- Find It Fast -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Find it Fast</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li>487 Eighth Avenue West Street, New York</li>
+                        <li>Phone: 9039212123</li>
+                        <li>E-Mail: Simple@mgke</li>
+                    </ul>
+                </div>
+
+                <!-- Information -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Information</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#!" class="hover:underline">About Us</a></li>
+                        <li><a href="#!" class="hover:underline">FAQ Page</a></li>
+                        <li><a href="#!" class="hover:underline">Wish List</a></li>
+                        <li><a href="#!" class="hover:underline">Contact Us</a></li>
+                        <li><a href="#!" class="hover:underline">Work With Us</a></li>
+                        <li><a href="#!" class="hover:underline">Offices</a></li>
+                    </ul>
+                </div>
+
+                <!-- Discover -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Discover</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#!" class="hover:underline">Men</a></li>
+                        <li><a href="#!" class="hover:underline">Women</a></li>
+                        <li><a href="#!" class="hover:underline">Home & Living</a></li>
+                        <li><a href="#!" class="hover:underline">Sale</a></li>
+                        <li><a href="#!" class="hover:underline">Private Shopping</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#!" class="hover:underline">Follow Us On Instagram</a></li>
+                        <li><a href="#!" class="hover:underline">Add to Facebook</a></li>
+                        <li><a href="#!" class="hover:underline">Pinterest</a></li>
+                        <li><a href="#!" class="hover:underline">Follow us on Twitter</a></li>
+                        <li><a href="#!" class="hover:underline">Google</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="bg-black py-6 text-center">
+            <p class="text-lg text-white tracking-wide">
+                © <a href="#!" class="font-medium hover:text-gray-300">Neoncart</a> - All rights Reserved
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
