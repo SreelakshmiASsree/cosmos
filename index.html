@@ -70,7 +70,7 @@
         <div class="custom_container">
             <div class="flex items-center  justify-start  h-[80vh]  text-center ">
                 <div class=" text-[#000] mt-36 flex flex-col gap-3">
-                    <h3 class="text-3xl lg:text-7xl font-semibold lg:mb-4 mb-2 text-start" data-animation="fadeInUp"
+                    <h3 class="text-3xl lg:text-7xl font-bold lg:mb-4 mb-2 text-start" data-animation="fadeInUp"
                         data-delay=".6s">
                         The complete <br>Products solution
                     </h3>
@@ -162,7 +162,8 @@
                 <!-- 🧾 Middle: Title + Supplier Info -->
                 <div class="flex flex-col flex-grow justify-center">
                     <div class="flex justify-around gap-5 mt-6">
-                        <p class="text-sm lg:text-lg uppercase tracking-wider opacity-90 font-medium text-[#fff]">Our Customers <br>
+                        <p class="text-sm lg:text-lg uppercase tracking-wider opacity-90 font-medium text-[#fff]">Our
+                            Customers <br>
                             & Network</p>
                         <div class=" flex ">
                             <div class=" bg-white bg-opacity-20 rounded-full w-fit ">
@@ -205,14 +206,14 @@
 
                 <!-- Text -->
                 <div class="lg:w-2/3 lg:pr-6 p-6">
-                    <h2 class="text-2xl font-bold mb-4">
+                    <h2 class="text-xl lg:text-3xl font-bold mb-4">
                         Who <span class="text-green-700">We</span> Are
                     </h2>
-                    <p class="text-gray-700 text-sm leading-relaxed">
+                    <p class="text-gray-700 text-sm lg:text-[16px] leading-relaxed">
                         At Competti, we understand the challenges of creating exceptional spaces that blend elegance,
                         quality, and functionality.
                     </p>
-                    <p class="text-gray-700 text-sm mt-3 leading-relaxed">
+                    <p class="text-gray-700 text-sm lg:text-[16px] mt-3 leading-relaxed">
                         As Oregon’s premier furniture solutions provider, we’ve made it our mission to simplify the
                         furnishing process, ensuring that every project is executed flawlessly from initial consultation
                         to final installation.
@@ -384,303 +385,340 @@
     <section class="py-10 lg:py-20">
         <div class="custom_container">
             <div class="flex justify-start items-center">
-                <h1 class="lg:text-5xl text-xl font-semibold lg:mb-8 mb-4 ">Popular Products</h1>
+                <h1 class="lg:text-4xl text-xl font-semibold lg:mb-8 mb-4 ">Popular Products</h1>
 
             </div>
             <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
 
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
+                <!-- Wrapper -->
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
                     </div>
 
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                specf
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
                 </div>
 
 
 
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
 
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
                     </div>
 
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
                         </div>
                     </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
-                </div>
-                <div class="w-full max-w-xs mx-auto border-4 border-gray-400/25 p-2">
-                    <!-- Image and Icons -->
-                    <div class="w-full h-[300px] relative group overflow-hidden">
-                        <img src="/images/products.png" alt="products" class="w-full h-full object-cover" />
-
-                        <!-- Icons on Hover -->
-                        <div
-                            class="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex justify-center items-center gap-4">
-                            <i
-                                class="fa-regular fa-heart text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-100"></i>
-                            <i
-                                class="fa-solid fa-circle-info text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-300"></i>
-                            <i
-                                class="fa-solid fa-cart-shopping text-black bg-white w-14 h-14 rounded-full text-2xl flex items-center justify-center cursor-pointer transform translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition duration-500 delay-500"></i>
-                        </div>
-                    </div>
-
-                    <!-- Product Name -->
-                    <p class="text-lg font-medium pt-1 text-black ">Rag & Bone Beck Coat</p>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star text-yellow-400"></i>
-                    <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
                 </div>
 
 
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="productModal"
+                class="fixed inset-0 bg-black bg-opacity-60 hidden justify-center items-center z-50 overflow-auto px-4 py-8">
+                <div class="bg-white max-w-4xl w-full rounded-lg shadow-xl lg:p-6 p-3 relative">
+
+                    <button onclick="closeModal()"
+                        class="absolute top-3 right-3 text-black text-xl bg-gray-200 w-8 h-8 rounded-full flex items-center justify-center">&times;</button>
+
+                    <div class="flex flex-col lg:flex-row lg:gap-16 gap-2 justify-center">
+
+                        <div class=" ">
+                            <img id="mainProductImage" src="" alt="Product"
+                                class="w-full lg:h-[350px] h-[150px] object-cover rounded-lg" />
+                            <div id="thumbnailContainer" class="flex gap-2 mt-4 justify-center"></div>
+                        </div>
+
+
+                        <div class=" flex flex-col lg:gap-4 gap-2">
+                            <p class="text-sm text-gray-500">spectacles</p>
+                            <h2 id="productTitle" class="text-2xl font-semibold">Product Title</h2>
+
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star text-yellow-400"></i>
+                                <i class="fa-solid fa-star-half-stroke text-yellow-400"></i>
+
+                            </div>
+
+
+                            <p class="text-gray-600 text-sm max-w-[400px]">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt.
+                            </p>
+
+
+                            <div class="flex items-center gap-3 ">
+                                <button onclick="decreaseQty()" class="w-8 h-8 border rounded text-xl">-</button>
+                                <span id="quantityValue">1</span>
+                                <button onclick="increaseQty()" class="w-8 h-8 border rounded text-xl">+</button>
+                            </div>
+
+
+                            <div class="flex gap-3 ">
+                                <button
+                                    class="bg-green-700 text-white px-5 py-2 rounded-full text-sm hover:bg-green-800">Add
+                                    To Cart</button>
+                                <button
+                                    class="bg-yellow-500 text-white px-5 py-2 rounded-full text-sm hover:bg-yellow-600">Enquiry
+                                    Now</button>
+                            </div>
+
+
+                            <div class="text-sm text-gray-600  flex flex-col gap-3">
+                                <p><strong>SKU:</strong> <span id="productSKU">N/A</span></p>
+                                <p><strong>Tags:</strong> <span id="productTags">-</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="flex justify-center text-center mt-8">

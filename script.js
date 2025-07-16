@@ -66,7 +66,67 @@ function restartAutoplay() {
   }, 4000);
 }
 
+  let quantity = 1;
+
+  function increaseQty() {
+    quantity++;
+    document.getElementById("quantityValue").innerText = quantity;
+  }
+
+  function decreaseQty() {
+    if (quantity > 1) {
+      quantity--;
+      document.getElementById("quantityValue").innerText = quantity;
+    }
+  }
+
+function openModal(el) {
+  const title = el.dataset.title;
+  const image = el.dataset.image;
+  const thumbs = JSON.parse(el.dataset.thumbs);
+  const sku = el.dataset.sku;
+  const tags = el.dataset.tags;
+
+  document.getElementById("productTitle").innerText = title;
+  document.getElementById("mainProductImage").src = image;
+  document.getElementById("productSKU").innerText = sku;
+  document.getElementById("productTags").innerText = tags;
+
+  const thumbContainer = document.getElementById("thumbnailContainer");
+  thumbContainer.innerHTML = "";
+  thumbs.forEach((thumb) => {
+    const img = document.createElement("img");
+    img.src = thumb;
+    img.className = "w-16 h-16 object-cover border rounded cursor-pointer";
+    img.onclick = () => changeMainImage(img);
+    thumbContainer.appendChild(img);
+  });
+
+  quantity = 1;
+  document.getElementById("quantityValue").innerText = quantity;
+
+  const modal = document.getElementById("productModal");
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+}
+
+
+  function closeModal() {
+    document.getElementById("productModal").classList.add("hidden");
+    document.getElementById("productModal").classList.remove("flex");
+  }
+
+  function changeMainImage(thumbnail) {
+    document.getElementById("mainProductImage").src = thumbnail.src;
+  }
 
 
 
+
+
+
+
+
+
+  
 

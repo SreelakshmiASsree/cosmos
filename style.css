@@ -7,3 +7,23 @@
   padding: 0px 20px;
 
 }
+  .icon-btn {
+    background-color: white;
+    color: black;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: translateY(2.5rem);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .group:hover .icon-btn {
+    transform: translateY(0);
+    opacity: 1;
+  }
