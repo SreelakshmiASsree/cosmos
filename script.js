@@ -13,15 +13,15 @@ function closeMenu() {
 }
 
 
-window.addEventListener('scroll', () => {
-    if (scrollY > 50) {
-        navBar.classList.add('bg-white', 'bg-opacity-100', 'backdrop-blur-lg',
-            'shadow-sm','dark:bg-darkTheme','dark:shadow-white/20'
-        )
-        navLinks.classList.remove('bg-white', 'bg-opacity-50', 'shadow-sm','dark:border','dark:shadow-white/70','dark:bg-transparent')
+// window.addEventListener('scroll', () => {
+//     if (scrollY > 50) {
+//         navBar.classList.add('bg-white', 'bg-opacity-100', 'backdrop-blur-lg',
+//             'shadow-sm','dark:bg-darkTheme','dark:shadow-white/20'
+//         )
+//         navLinks.classList.remove('bg-white', 'bg-opacity-50', 'shadow-sm','dark:border','dark:shadow-white/70','dark:bg-transparent')
 
-    } 
-})
+//     } 
+// })
 
 
 
@@ -122,7 +122,17 @@ function openModal(el) {
 
 
 
+function openCart() {
+  window.scrollTo(0, 0); // scroll to top before opening
+  document.getElementById("cartSidebar").classList.remove("translate-x-full");
+  document.body.classList.add("overflow-hidden");
+}
 
+
+function closeCart() {
+  document.getElementById("cartSidebar").classList.add("translate-x-full");
+  document.body.classList.remove("overflow-hidden");
+}
 
 
 

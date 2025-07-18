@@ -29,7 +29,7 @@
 
 <body class="font-Jost">
     <section class="h-screen bg-cover bg-center" style="background-image: url('./images/banner.png');">
-        <nav class="w-full fixed px-2 lg:px-8 xl:px-[8%] py-6 flex items-center justify-between z-50 font-Ovo">
+        <nav class="w-full fixed px-2 lg:px-8 xl:px-[8%] py-6 flex items-center justify-between z-50 font-Ovo bg-[#fff]">
             <img src="./images/logo.png" alt="" class="lg:w-52 w-40">
             <ul class=" hidden md:flex  items-center gap-6 lg:gap-8 rounded-full px-12 py-3  
       ">
@@ -44,15 +44,67 @@
                     <a href=""><i
                             class="fa-solid fa-magnifying-glass  lg:text-xl text-sm bg-white px-3 py-2 rounded-full"></i></a>
                 </button>
-                <button>
-                    <a href=""><i
-                            class="fa-solid fa-cart-shopping lg:text-xl text-sm bg-white px-3 py-2 rounded-full"></i></a>
+                <button onclick="openCart()">
+                    <i class="fa-solid fa-cart-shopping lg:text-xl text-sm bg-white px-3 py-2 rounded-full"></i>
                 </button>
                 <button class="block md:hidden ml-3" onclick="openMenu()">
                     <i class="fa-solid fa-bars text-lg"></i>
 
                 </button>
             </div>
+
+
+            <div id="cartSidebar"
+                class="fixed top-0 right-0 w-[350px] h-full bg-white shadow-lg z-500 transform translate-x-full transition-transform duration-300 ease-in-out">
+
+                <div class="flex justify-between items-center p-4 border-b">
+                    <h2 class="text-lg font-semibold">Your Cart</h2>
+                    <button onclick="closeCart()">
+                        <i class="fa-solid fa-xmark text-xl"></i>
+                    </button>
+                </div>
+
+                <div class="p-4 overflow-y-auto h-[80%] ">
+                    <!-- Example Cart Items -->
+                    <div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="">
+                                <img src="/images/spec.png" class="w-[79px] h-[99px]" alt="Product" />
+                                <div>
+                                    <p class="font-semibold">Yellow Blouse</p>
+
+                                </div>
+                            </div>
+                            <button class="ml-auto">
+                                <i class="fa-solid fa-trash text-red-500 text-xl"></i>
+                            </button>
+                        </div>
+
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="">
+                                <img src="/images/spec.png" class="w-[79px] h-[99px]" alt="Product" />
+                                <div>
+                                    <p class="font-semibold">Yellow Blouse</p>
+
+                                </div>
+                            </div>
+                            <button class="ml-auto">
+                                <i class="fa-solid fa-trash text-red-500 text-xl"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Summary -->
+
+
+                    <!-- Buttons -->
+                    <div class="pt-20 flex flex-col gap-4 ">
+                        <button class="w-full bg-black text-white py-4 mb-2">View Cart</button>
+                        <button class="w-full bg-black text-white py-4">Enquiry Now</button>
+                    </div>
+                </div>
+            </div>
+
 
             <!----mobile menu------->
             <ul id="sideMenu"
@@ -167,7 +219,7 @@
                             & Network</p>
                         <div class=" flex ">
                             <div class=" bg-white bg-opacity-20 rounded-full w-fit ">
-                                <img src="/images//sphere.png" alt="" class="w-24">
+                                <img src="/images/sphere.png" alt="" class="w-24">
                             </div>
                         </div>
                     </div>
@@ -443,6 +495,56 @@
                     </div>
                 </div>
 
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
+                    onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
+                    data-image="/images/products.png"
+                    data-thumbs='["/images/products.png", "/images/spec.png", "/images/specone.png", "/images/spectwo.png"]'
+                    data-sku="GRFR85648HGJ" data-tags="Skincare, Serum, Vitamin C">
+
+                    <!-- Image Container -->
+                    <div class="relative group rounded-t-lg overflow-hidden">
+                        <img src="/images/products.png" alt="Chair"
+                            class="w-full h-[300px] object-cover rounded-t-lg" />
+                    </div>
+
+                    <!-- Bottom Details -->
+                    <div class="bg-white rounded-b-lg p-3 flex justify-between items-center">
+                        <div class="flex flex-col gap-3">
+                            <p class="lg:text-2xl text-xl font-semibold text-black leading-none">
+                                spec
+                            </p>
+                            <p class="text-md lg:text-lg text-gray-600">£250</p>
+                        </div>
+                        <div class="text-right">
+                            <i class="fa-solid fa-circle-info text-black text-[28px]"></i>
+                        </div>
+                    </div>
+                </div>
                 <div class="w-full max-w-xs mx-auto rounded-xl bg-[#ffffff] shadow-md cursor-pointer"
                     onclick="openModal(this)" data-title="SilkSkin Serum" data-price="48.00" data-oldprice="60.00"
                     data-image="/images/products.png"
